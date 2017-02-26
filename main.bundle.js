@@ -5,8 +5,7 @@ webpackJsonp([1,4],{
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__subject__ = __webpack_require__(175);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__settings_service__ = __webpack_require__(267);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__settings_service__ = __webpack_require__(266);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SubjectService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -19,11 +18,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-
-var SUBJECTS = [
-    new __WEBPACK_IMPORTED_MODULE_1__subject__["a" /* Subject */]("MATH1210"),
-    new __WEBPACK_IMPORTED_MODULE_1__subject__["a" /* Subject */]("PHYS1210")
-];
+var SUBJECTS = [];
 var SubjectService = (function () {
     function SubjectService(settingsService) {
         this.settingsService = settingsService;
@@ -68,7 +63,7 @@ var SubjectService = (function () {
     };
     SubjectService = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__settings_service__["a" /* SettingsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__settings_service__["a" /* SettingsService */]) === 'function' && _a) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__settings_service__["a" /* SettingsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__settings_service__["a" /* SettingsService */]) === 'function' && _a) || Object])
     ], SubjectService);
     return SubjectService;
     var _a;
@@ -77,31 +72,14 @@ var SubjectService = (function () {
 
 /***/ }),
 
-/***/ 175:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Subject; });
-var Subject = (function () {
-    function Subject(name) {
-        this.name = name;
-        this.open = false;
-        this.tasks = [];
-    }
-    return Subject;
-}());
-//# sourceMappingURL=H:/Documents/programming/UniBuddy/src/subject.js.map
-
-/***/ }),
-
-/***/ 266:
+/***/ 265:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dialog_confirm_dialog_confirm_component__ = __webpack_require__(445);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__(247);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__(246);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__subject__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__subject__ = __webpack_require__(267);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DialogService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -147,7 +125,7 @@ var DialogService = (function () {
 
 /***/ }),
 
-/***/ 267:
+/***/ 266:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -183,13 +161,30 @@ var SettingsService = (function () {
 
 /***/ }),
 
+/***/ 267:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Subject; });
+var Subject = (function () {
+    function Subject(name) {
+        this.name = name;
+        this.open = false;
+        this.tasks = [];
+    }
+    return Subject;
+}());
+//# sourceMappingURL=H:/Documents/programming/UniBuddy/src/subject.js.map
+
+/***/ }),
+
 /***/ 445:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__(247);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dialog_service__ = __webpack_require__(266);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__(246);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dialog_service__ = __webpack_require__(265);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__subject_service__ = __webpack_require__(117);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DialogConfirmComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -350,7 +345,7 @@ var SchedulePageComponent = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__subject_service__ = __webpack_require__(117);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__settings_service__ = __webpack_require__(267);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__settings_service__ = __webpack_require__(266);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SettingsPageComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -400,9 +395,9 @@ var SettingsPageComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__subject__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__subject__ = __webpack_require__(267);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__subject_service__ = __webpack_require__(117);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dialog_service__ = __webpack_require__(266);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dialog_service__ = __webpack_require__(265);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SubjectListPageComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -472,7 +467,7 @@ var SubjectListPageComponent = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__subject_service__ = __webpack_require__(117);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__subject__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__subject__ = __webpack_require__(267);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__task__ = __webpack_require__(664);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TodoPageComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -528,11 +523,12 @@ var TodoPageComponent = (function () {
     };
     TodoPageComponent.prototype.pushTask = function (subject) {
         var index = this.subjects.indexOf(subject);
-        // In form yyyy-mm-dd
+        // html5 always gives it in the form yyyy-mm-dd.
         var yyyy = this.dateString.slice(0, 4);
         var mm = this.dateString.slice(5, 7);
         var dd = this.dateString.slice(8, 10);
         this.subjects[index]['tasks'].push(new __WEBPACK_IMPORTED_MODULE_3__task__["a" /* Task */](this.taskToBePushed, dd, mm, yyyy, this.subjectService.getDateFormat()));
+        // Since data binding is 2 way, we need to reset.
         this.taskToBePushed = "";
         // Close subject.
         this.subjects[index]['open'] = false;
@@ -595,7 +591,7 @@ var TodoPageComponent = (function () {
         var index = this.subjects.indexOf(subject);
         var count = 0;
         if (index == -1) {
-            console.log("subject object not found in list");
+            console.log("Subject object not found in list.");
             return;
         }
         if (subject['open'] == true) {
@@ -790,8 +786,8 @@ var AppComponent = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(230);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_material__ = __webpack_require__(247);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(229);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_material__ = __webpack_require__(246);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_hammerjs__ = __webpack_require__(818);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_hammerjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_hammerjs__);
@@ -805,9 +801,9 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__settings_page_settings_page_component__ = __webpack_require__(449);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__app_routing_module__ = __webpack_require__(660);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__subject_service__ = __webpack_require__(117);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__settings_service__ = __webpack_require__(267);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__settings_service__ = __webpack_require__(266);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__subject_list_page_subject_list_page_component__ = __webpack_require__(450);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__dialog_service__ = __webpack_require__(266);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__dialog_service__ = __webpack_require__(265);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
