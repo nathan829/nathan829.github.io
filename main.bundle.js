@@ -1013,7 +1013,7 @@ var environment = {
 /***/ 820:
 /***/ (function(module, exports) {
 
-module.exports = "div.container {\n  position: absolute;\n  top: 58px;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  margin: 10px; }\n"
+module.exports = "div.container {\n  position: absolute;\n  top: 58px;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  margin: 10px; }\n\n#outer {\n  width: 100%; }\n\n#inner {\n  width: 50%;\n  margin: 0 auto; }\n"
 
 /***/ }),
 
@@ -1076,7 +1076,7 @@ module.exports = ".due-date {\n  max-width: 60px;\n  color: grey;\n  font-size: 
 /***/ 829:
 /***/ (function(module, exports) {
 
-module.exports = "<md-sidenav-container fullscreen>\n\t<md-toolbar color=\"primary\">\n\t\t<span flex></span>\n\t\t<button md-icon-button (click)=\"leftSide.open()\">\n\t\t\t<md-icon>menu</md-icon>\n\t\t</button>\n\t\t<div style=\"position: absolute; left: 50%;\">\n\t\t\t<div class=\"md-title\" style=\"position: relative; left: -50%;\">\n\t\t\t\t{{ title }}\n\t\t\t</div>\n\t\t</div>\n\t</md-toolbar>\n\t<md-sidenav #leftSide>\n\t\t<md-list>\n\t\t\t<h3>Links</h3>\n\t\t\t<md-list-item *ngFor=\"let route of routeList\">\n\t\t\t\t<button md-button routerLink=\"{{ route.routerLink }}\" (click)=\"leftSide.close()\">{{ route.name }}</button>\n\t\t\t</md-list-item>\n\t\t</md-list>\n\t</md-sidenav>\n\t<div class=\"container\">\n\t\t<router-outlet></router-outlet>\n\t</div>\n</md-sidenav-container>"
+module.exports = "<md-sidenav-container fullscreen>\n\t<md-toolbar color=\"primary\">\n\t\t<span flex></span>\n\t\t<button md-icon-button (click)=\"leftSide.open()\">\n\t\t\t<md-icon>menu</md-icon>\n\t\t</button>\n\t\t<!-- <div style=\"position: absolute; left: 50%\">\n\t\t\t<div class=\"md-title\" style=\"position: relative; left: -50%;\"> -->\n\t\t<div id=\"outer\">\n\t\t\t<div id=\"inner\">\n\t\t\t\t{{ title }}\n\t\t\t</div>\n\t\t</div>\n\t</md-toolbar>\n\t<md-sidenav #leftSide>\n\t\t<md-list>\n\t\t\t<h3>Links</h3>\n\t\t\t<md-list-item *ngFor=\"let route of routeList\">\n\t\t\t\t<button md-button routerLink=\"{{ route.routerLink }}\" (click)=\"leftSide.close()\">{{ route.name }}</button>\n\t\t\t</md-list-item>\n\t\t</md-list>\n\t</md-sidenav>\n\t<div class=\"container\">\n\t\t<router-outlet></router-outlet>\n\t</div>\n</md-sidenav-container>"
 
 /***/ }),
 
